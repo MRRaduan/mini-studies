@@ -1,0 +1,23 @@
+// ITCSS Hierarchy
+
+// *************  - Settings
+//  ***********   - Tools
+//   *********    - Generic
+//    *******     - Basic
+//     *****      - Objects
+//      ***       - Components
+//       *        - Trumps
+
+//  Settings
+@import 'settings/vars';
+
+//  Tools
+@import 'tools/mixins';
+
+// *Generic
+@import 'generic/reset';
+
+// *Base
+@import 'base/base';
+
+

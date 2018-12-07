@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Block Reveal Effects | Overview | Codrops</title>
+	<meta name="description" content="Ideas for revealing content in a schematic box look." />
+	<meta name="keywords" content="javascript, plugin, reveal, effect, demo, web development, web design, template" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Poppins:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/revealer.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<script>document.documentElement.className = 'js';</script>
+</head>
+<body>
+
+	<main class="main">
+
+   
+		<div class="hamburguer-menu">
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+		</div>
+
+		<nav class="menu-navbar">
+			<div class="revealer">
+				<ul class="menu-list">
+					<li class="item">
+						Who we are
+					</li>
+					<li class="item">
+						What we do
+					</li>
+					<li class="item">
+						Our Services
+					</li>
+					<li class="item">
+						Experience
+					</li>
+					<li class="item">
+						Hey, talk to us
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- <section class="section line-wrapper bgc-blue">
+			<div class="line" data-rev data-revDirection="bt"></div>
+			<div class="line" data-rev data-revDirection="tb"></div>
+			<div class="line" data-rev data-revDirection="bt"></div>
+			<div class="line" data-rev data-revDirection="tb"></div>
+			<div class="line" data-rev data-revDirection="bt"></div>
+		</section>
+ -->
+		<!-- Onload -->
+		<section class="section bgc-blue">
+			<h1 class="title-group">
+				<div class="text" data-revealer="rev-1" data-revDirection="tb"> 
+					I show up 
+				</div>
+				<div class="text" data-revealer="rev-2">
+					when this page loads
+				</div>
+			</h1>
+		</section>
+
+	<section class="section bgc-red">
+			<h1 class="title-group tar">
+				<div class="text"
+						data-rev
+						 data-revColor="#84a"
+						 data-revDirection="tb"
+					   data-revDelay="300">
+					I show up 
+				</div>
+				<div class="text" data-rev data-revDirection="bt">
+					when this page scroll
+				</div>
+			</h1>
+		</section>
+
+
+	<section class="section bgc-blue">
+
+		<div data-rev data-revColor="#84a"
+						 data-revDirection="rl"
+					   data-revDelay="250">
+			<img src="https://picsum.photos/600/300" alt="some-image">
+		</div>
+
+			<h1 class="title-group tar">
+				<div class="text" data-rev data-revDirection="lr">
+					when this page scroll
+				</div>
+			</h1>
+		</section>
+
+
+	</main>
+	
+	
+	<script src="js/anime.min.js"></script>
+	<script src="js/scrollMonitor.js"></script>
+	<script src="js/revealer.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

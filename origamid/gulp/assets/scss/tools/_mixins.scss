@@ -1,0 +1,36 @@
+// Tools
+
+// breakpoint mixin
+@mixin breakpoint($point) {
+  @if $point==medium {
+    @media (min-width: $medium) {
+      @content;
+    } // 768 px
+  }
+  @else if $point==large {
+    @media (min-width: $large) {
+      @content;
+    } // 1280 px
+  }
+  @else if $point==big {
+    @media (min-width: $big) {
+      @content;
+    } // 1440 px
+  }
+  @else {
+    @media (min-width: $point) {
+      @content;
+      // For personal breakpoint
+    }
+  }
+}
+
+// Border radius mixin
+@mixin borderRadius($side) {
+  @if $side==bottomRight {
+    border-radius: 0 0 30px 0;
+  }
+  @else if $side==bottomLeft {
+    border-radius: 0 0 0 30px;
+  }
+}
